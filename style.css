@@ -1,0 +1,638 @@
+/* selector/type/class { what to change : change} */
+
+@font-face { 
+	font-family: 'neco', serif;
+	src: url("fonts/Neco-Variable.woff2") format("woff2");
+}
+@font-face { 
+	font-family: 'Cabinet Grotesk', sans-serif;
+	src: url("fonts/CabinetGrotesk-Variable.woff2") format("woff2");
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px 0% 70px 0%;
+	background-image: linear-gradient(145deg, #ffffff 42.86%, #f0f0f0 42.86%, #f0f0f0 50%, #ffffff 50%, #ffffff 92.86%, #f0f0f0 92.86%, #f0f0f0 100%);
+	background-size: 12.20px 8.55px;
+}
+
+h1 {
+	font-family: 'neco';
+	font-size: 8vw;
+	font-weight: 700;
+	line-height: 1;
+	color: #181818;
+}
+
+h2 {
+	font-family: 'neco';
+	font-weight: 750;
+	font-size: 42px;
+	line-height: 56px;
+	color: #181818;
+}
+
+.section-box {
+	position: fixed;
+	font-family: 'neco';
+	font-weight: 750;
+	font-size: 42px;
+	line-height: 24px;
+	color: white;
+	text-align: center;
+	writing-mode:vertical-rl;
+	width: 3%;
+	background-color: #181818;
+	padding: 25px 15px 25px 45px;
+	top: 0px;
+	margin-left: 0px;
+	z-index: 9999;
+	height: 200px;
+}
+
+.section-box:first-letter {
+	text-transform: uppercase;
+}
+
+
+a {
+	font-family: 'Cabinet Grotesk';
+	font-weight: 450;
+	font-size: 18px;
+	color: #181818;
+	text-decoration-thickness: 1px;
+}
+
+img{
+	max-width: 100%;
+}
+
+.colHor1 img {
+
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+/********************* Paragraphs + Quotes **********************/
+.poetry, .power, .scale {
+	margin-bottom: 60px;
+}
+
+.main {
+	display: flex;
+	gap: 4%;
+	margin: 0% 5.5% 40px 5.5%;
+}
+
+
+.paragraph {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+p {
+	margin: 0%;
+	font-family: 'Cabinet Grotesk';
+	font-weight: 450;
+	font-size: 18px;
+	line-height: 24px;
+	color: #181818;
+	padding-bottom: 14px;
+}
+
+h6 {
+	font-family: 'neco';
+	font-weight: 750;
+	font-size: 32px;
+	line-height: 38px;
+	color: #181818;
+	margin: 20px 8.3% 0% 8.3%;
+	padding-bottom: 20px;
+}
+
+blockquote {
+	width: 50%;
+	height: 100%;
+	color: #181818;
+	position: relative;
+	padding: 2.5rem 0rem;
+	margin: 0rem;
+	background: conic-gradient(from 180deg at 85% calc(100% - 20px), #181818 0 25%, rgba(255,255,255, 0) 0 100%), 
+	conic-gradient(from 0deg at 17% 20px,#181818 0 25%, rgba(255,255,255, 0) 0 100%);
+}
+
+blockquote:before, blockquote:after {
+	content: '';
+	position: absolute;
+	width: 15%;
+	height: 4.5rem;
+	top: 5rem;
+	left: 0rem;
+	font-family: 'neco';
+	font-size: 200px;
+	font-weight: 750;
+	line-height: 0px;
+}
+
+blockquote:before {
+	content: '“';
+}
+
+blockquote:after {
+	content: '”';
+	top: inherit;
+	bottom:-8rem;
+	left: inherit;
+	right: -40px;
+}
+
+.cite {
+	width: 100%;
+	padding-right: 60px;
+	text-align: right;
+}
+
+h1::selection, h2::selection, h3::selection, h6::selection, p::selection, a::selection {
+	color: white;
+	background: #181818;
+}
+
+/********************* Smaller Screen **************************/
+
+@media screen and (max-width: 1250px){
+	.main {
+		display: flex;
+		gap: 10%;
+		margin: 0% 5.5% 40px 5.5%;
+	}
+
+	.paragraph {
+		width: 45%;
+	}
+
+	blockquote {
+		width: 45%;
+	}
+}
+
+/********************* Title *********************/
+
+.intro {
+	padding: 40px 7% 0% 7%;
+	padding-bottom: 50px;	
+}
+
+.titleSmall {
+	font-size: 80px;
+	line-height: 70px;
+	display: inline;
+}
+
+.titleBig {
+	font-size: 200px;
+	display: inline;
+}
+
+#subTitle {
+	width: 100%;
+	padding-left: 25%;
+	line-height: 50px;
+}
+
+/********************* Buidings *********************/
+
+.building, .illinois, .cenotaph, .volkshalle{
+	width: 100%;
+	height: 100%;
+}
+
+#js-wrapper{
+	background-color: #72C3F2;
+	margin-bottom: 80px;
+}
+
+#js-wrapper2{
+	background-color: #FF0000;
+	margin-bottom: 80px;
+}
+
+#js-wrapper3{
+	background-color: #E5B975;
+	margin-bottom: 80px;
+}
+
+.illinois, .cenotaph, .volkshalle{
+	display: flex;
+	flex-direction: row;
+	gap: 64px;
+	align-items: flex-end;
+}
+
+.secondaryTitle {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 8vw;
+	line-height: 1;
+	padding-bottom: 25px;
+	padding-left: 80px;
+	margin: 0px;
+}
+
+.subSecondaryTitle {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 3.5vw;
+	margin: 0px;
+	padding-left: 80px;
+}
+
+.building a, .building p {
+	display: inline;	
+	font-weight: 400;
+	text-decoration-thickness: 2px;	
+}
+
+.imgCredit{
+	display: flex;
+	flex-direction: column;
+}
+
+.imgCredit {
+	margin-bottom: 6px;
+	display: inline-block;
+}
+
+
+/********************* Buidings' Quotes *********************/
+
+.bigQuote {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.bigQuote h1 {
+	font-size: 15vmin;
+	margin: 20px;
+}
+
+.smallQuote {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	font-family: 'neco';
+	font-weight: 750;
+	font-size: 3.5vw;
+	line-height: 1.2;
+	text-indent: 90px;
+}
+
+.beforeQuote {
+	font-family: 'neco';
+	font-size: 250px;
+	font-weight: 750;
+	position: relative;
+	top: 250px;
+	left: -100px;
+}
+
+.buildingCite {
+	align-self: flex-end;
+	font-size: 20px;
+	font-weight: 800 !important;
+}
+
+/********************* Buidings' Videos *********************/
+
+iframe{
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
+
+/********************* Buidings' Placement *********************/
+
+.col1{
+	width: 8.3%;	
+}
+
+.col2{
+	width: 16.6%;	
+}
+
+.col3{
+	width: 25%;	
+}
+
+.col4{
+	width: 33.3%;	
+}
+
+.col5{
+	width: 41.6%;	
+}
+
+.col6{
+	width: 50%;	
+}
+
+.col7{
+	width: 58.3%;	
+}
+
+.col8{
+	width: 66.6%;	
+}
+
+.col9{
+	width: 75%;	
+}
+
+.col10{
+	width: 83.3%;	
+}
+
+.col11{
+	width: 91.6%;	
+}
+
+.col12 {
+	width: 100%;
+}
+
+.colHor1 {
+	width: 10%;
+}
+
+.colHor2 {
+	width: 20%;
+}
+
+.colHor1Col {
+	width: 0.83%;
+}
+
+.colQuarter {
+	width: 2.5%;
+}
+
+.colHor5Col {
+	width: 4.14%;
+}
+
+.colHalf {
+	width: 5%;
+}
+
+.colHor8Col{
+	width: 6.66%;
+}
+
+.col3Quarters {
+	width: 7.5%;
+}
+
+.colHor10col {
+	width: 8.33%;
+}
+
+.offset-HorCol25{
+	margin-left: 0.5%;	
+}
+
+.offset-col25{
+	margin-left: 2%;	
+}
+
+.offset-col1{
+	margin-left: 8.3%;	
+}
+
+.offset-col2{
+	margin-left: 16.6%;	
+}
+
+.offset-col3{
+	margin-left: 25%;	
+}
+
+.offset-col4{
+	margin-left: 33.3%;	
+}
+
+.offset-col5{
+	margin-left: 41.6%;	
+}
+
+.offset-col6{
+	margin-left: 50%;	
+}
+
+.offset-col7{
+	margin-left: 58.3%;	
+}
+
+.offset-col8{
+	margin-left: 66.6%;	
+}
+
+.offset-col9{
+	margin-left: 75%;	
+}
+
+.offset-col10{
+	margin-left: 83.3%;	
+}
+
+.offset-col11{
+	margin-left: 91.6%;	
+}
+
+
+
+
+/********************* horizontal scroll *********************/
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	perspective: 1000;
+}
+
+.sections section {
+	height: 100%;
+	width: 100%;
+	float: left;
+	position: relative;
+	background-color: blue;
+}
+
+.sections {
+	width: 750%;
+	height: 100%;
+	background-color: red;
+}
+
+.section__title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	color: #fff;
+}
+
+
+/********************* Gallery *********************/
+
+
+.gallery {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery2{
+	width: 100%; 
+	overflow: hidden; 
+	margin: 0 auto;
+}
+
+.gallery3 {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+/********************* Newton's Cenotaph *********************/
+
+.cenotaph {
+	background-color: #94d8ff;
+	padding: 20px 20px 50px 20px;
+}
+
+.cenotaph h1, .cenotaph h2, .cenotaph a, .cenotaph p{
+	color: #ff66ad;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.cenotaph h4 {
+	color: #ff66ad;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+
+.imgCol {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.imgCol img{
+	max-width: 50%;
+	padding: 4px;
+}
+
+.cenotaph .smallQuote:before {
+	color: #ff66ad;
+}
+
+.cenotaph h1::selection, .cenotaph h2::selection, .cenotaph h3::selection, .cenotaph h4::selection, .cenotaph h6::selection, .cenotaph p::selection, .cenotaph a::selection, .cenotaph img::selection {
+	color: #94d8ff;
+	background: #ff66ad;
+}
+
+.push {
+	position: relative;
+	left: -10%;
+}
+
+
+/********************* Volkshalle *********************/
+
+.volkshalle {
+	background-color: #FF0000;
+	padding: 20px 20px 50px 20px;
+}
+
+.volkshalle h1, .volkshalle h2, .volkshalle a, .volkshalle p{
+	color: #D1CBAD;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.volkshalle h4 {
+	color: #D1CBAD;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+
+.volkshalle .smallQuote:before{
+	color: #D1CBAD;
+}
+
+.volkshalle h1::selection, .volkshalle h2::selection, .volkshalle h3::selection, .volkshalle h4::selection, .volkshalle h6::selection, .volkshalle p::selection, .volkshalle a::selection, .volkshalle img::selection{
+	color: #FF0000;
+	background: #D1CBAD;
+}
+
+
+/********************* The Illinois *********************/
+
+.illinois {
+	background-color: #E5B975;
+	padding: 20px 20px 50px 20px;
+}
+
+.illinois h1, .illinois h2, .illinois a, .illinois p{
+	color: #7f8562;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.illinois h4 {
+	color: #7f8562;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+
+.illinois .smallQuote:before{
+	color: #7f8562;
+}
+
+.illinois h1::selection, .illinois h2::selection, .illinois h3::selection, .illinois h4::selection, .illinois h6::selection, .illinois p::selection, .illinois a::selection, .illinois img::selection{
+	color: #E5B975;
+	background: #7f8562;
+}
+
+.biggerQuote{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.biggerQuote h1 {
+	font-size: 29vh;
+	margin-bottom: 15%;
+	color: #E5B975;
+	background-color: #7f8562;
+	padding: 50px 0px;
+}
+
+#illinoisSketch {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+#illinoisSketch img {
+	max-width: 33%;
+	max-width: 33%;
+}
